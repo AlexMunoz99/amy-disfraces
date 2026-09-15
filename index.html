@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>AMY Disfraces y Accesorios | Venta y Renta de Vestuarios</title>
+  <meta name="description" content="Tienda de disfraces en venta y renta para niños y adultos. Catálogo con fotos, tallas, precios y disponibilidad en tiempo real. ¡Pide directo por WhatsApp!"/>
+  
+  <!-- Google Fonts: Outfit & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+  <!-- Tailwind CSS CDN + Stitch Custom Configuration -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#003c8a",
+            "primary-container": "#0952b5",
+            "on-primary": "#ffffff",
+            "primary-fixed": "#d9e2ff",
+            "on-primary-fixed": "#001943",
+            "secondary": "#006d39",
+            "secondary-container": "#8df9ad",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#00743d",
+            "secondary-fixed": "#8df9ad",
+            "on-secondary-fixed": "#00210d",
+            "tertiary": "#800c32",
+            "tertiary-container": "#a02848",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-container": "#ffbbc4",
+            "tertiary-fixed": "#ffd9dd",
+            "surface": "#f8f9ff",
+            "on-surface": "#171c23",
+            "on-surface-variant": "#424753",
+            "surface-container": "#eaeef8",
+            "surface-container-low": "#f0f4fd",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-high": "#e4e8f2",
+            "surface-container-highest": "#dee2ec",
+            "surface-dim": "#d6dae4",
+            "surface-bright": "#f8f9ff",
+            "outline": "#737784",
+            "outline-variant": "#c3c6d5"
+          },
+          fontFamily: {
+            sans: ["Outfit", "sans-serif"],
+            outfit: ["Outfit", "sans-serif"]
+          },
+          spacing: {
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "margin": "2rem",
+            "gutter": "1.25rem"
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    @layer base {
+      html, body {
+        font-family: 'Outfit', sans-serif;
+      }
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .icon-fill {
+      font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+    }
+    /* Estilo de scroll horizontal limpio para filtros móviles */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased font-sans flex flex-col min-h-screen selection:bg-primary/20 selection:text-primary">
+
+  <!-- ==================== TOP BAR & HEADER ==================== -->
+  <header class="fixed top-0 left-0 w-full z-40 bg-surface/90 backdrop-blur-xl border-b border-surface-container shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <!-- Top info notification strip -->
+    <div class="bg-primary text-on-primary py-1.5 px-4 sm:px-8">
+      <div class="max-w-[1280px] mx-auto flex items-center justify-between text-[11px] font-bold uppercase tracking-wider">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-[15px] icon-fill">celebration</span>
+          <span>¡Disfraces exclusivos, accesorios y vestuarios para todas las edades!</span>
+        </div>
+        <div class="hidden sm:flex items-center gap-6 normal-case font-semibold text-[12px]">
+          <a class="hover:underline flex items-center gap-1.5" href="https://wa.me/525512345678?text=Hola%20AMY%20Disfraces,%20deseo%20información" target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined text-[15px]">call</span>
+            <span>Atención y Cotizaciones: +52 55 1234 5678</span>
+          </a>
+          <span class="opacity-50">|</span>
+          <span class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[15px]">schedule</span>
+            <span>Lun - Sáb: 10:00 - 20:00</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="h-20 max-w-[1280px] mx-auto px-4 sm:px-8 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 shrink-0 group">
+        <div class="bg-white p-1 rounded-xl shadow-sm border border-slate-100 flex items-center justify-center">
+          <img 
+            alt="AMY Disfraces y Accesorios" 
+            class="h-10 w-auto object-contain transition-transform group-hover:scale-105" 
+            src="assets/logo.jpg"
+          />
+        </div>
+        <div class="hidden sm:flex flex-col">
+          <span class="font-extrabold text-[19px] leading-tight text-primary tracking-tight">AMY Disfraces</span>
+          <span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">&amp; Accesorios</span>
+        </div>
+      </a>
+
+      <!-- Header Instant Search Bar -->
+      <div class="hidden md:flex items-center flex-1 max-w-xs lg:max-w-sm relative">
+        <input 
+          id="header-search"
+          class="w-full bg-surface-container-low text-on-surface text-sm rounded-full pl-10 pr-4 py-2 border border-slate-200 focus:outline-none focus:border-primary focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all" 
+          placeholder="Buscar por personaje, disfraz o talla..." 
+          type="text"
+        />
+        <span class="material-symbols-outlined absolute left-3 text-outline text-[18px] pointer-events-none">search</span>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-1 font-semibold text-[14px]">
+        <a class="px-3.5 py-1.5 rounded-full bg-primary-container text-white transition-colors" href="#">Inicio</a>
+        <a class="px-3.5 py-1.5 rounded-full text-slate-600 hover:text-primary hover:bg-surface-container transition-colors" href="#catalogo">Catálogo Interactivo</a>
+        <a class="px-3.5 py-1.5 rounded-full text-slate-600 hover:text-primary hover:bg-surface-container transition-colors" href="#festividades">Festividades</a>
+        <a class="px-3.5 py-1.5 rounded-full text-slate-600 hover:text-primary hover:bg-surface-container transition-colors" href="#ubicacion-y-tienda">Ubicación &amp; Tienda</a>
+      </nav>
+
+      <!-- CTA Buttons -->
+      <div class="flex items-center gap-3 shrink-0">
+        <a 
+          class="inline-flex items-center gap-2 bg-secondary hover:bg-on-secondary-container text-white font-semibold text-xs sm:text-sm px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-all active:scale-95" 
+          href="https://wa.me/525512345678?text=Hola%20AMY%20Disfraces,%20deseo%20consultar%20disponibilidad%20de%20un%20disfraz"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="material-symbols-outlined text-[18px]">chat</span>
+          <span class="hidden xs:inline">WhatsApp</span>
+        </a>
+
+        <!-- Mobile Menu Anchor to Catalog -->
+        <a 
+          href="#catalogo" 
+          class="lg:hidden w-9 h-9 rounded-full bg-primary/10 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+          title="Ver catálogo"
+        >
+          <span class="material-symbols-outlined text-[20px]">checkroom</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main class="w-full pt-28 bg-surface flex-1">
+
+    <!-- HERO SECTION -->
+    <section class="relative w-full overflow-hidden bg-gradient-to-b from-surface-container-low via-surface to-surface pb-12 pt-4">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          
+          <!-- Hero Copy -->
+          <div class="lg:col-span-7 flex flex-col items-start gap-4 z-10">
+            <div class="inline-flex items-center gap-2 bg-primary-fixed text-on-primary-fixed px-4 py-1.5 rounded-full shadow-sm">
+              <span class="material-symbols-outlined text-[18px] text-primary icon-fill">magic_button</span>
+              <span class="font-bold text-[12px] uppercase tracking-wider">Tu tienda de disfraces en cada temporada</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-on-surface tracking-tight leading-[1.15]">
+              Haz que cada momento sea mágico: <span class="text-primary">Encuentra tu disfraz ideal</span>
+            </h1>
+
+            <p class="text-base sm:text-lg text-on-surface-variant max-w-xl">
+              Modelos de fantasía, superhéroes, personajes de época y vestuarios escolares para niños y adultos. Consulta fotos, selecciona tu talla y conoce precios y disponibilidad en tiempo real.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-3 pt-2 w-full sm:w-auto">
+              <a 
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary text-white font-semibold text-sm px-7 py-3 rounded-full shadow-md hover:bg-primary-container transition-all hover:scale-105 active:scale-95" 
+                href="#catalogo"
+              >
+                <span class="material-symbols-outlined text-[20px]">checkroom</span>
+                <span>Explorar Catálogo Interactivo</span>
+              </a>
+              <a 
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-secondary text-white font-semibold text-sm px-6 py-3 rounded-full shadow-md hover:bg-on-secondary-container transition-all hover:scale-105 active:scale-95" 
+                href="https://wa.me/525512345678?text=Hola%20AMY%20Disfraces,%20deseo%20consultar%20disponibilidad%20de%20un%20atuendo" 
+                rel="noopener noreferrer" 
+                target="_blank"
+              >
+                <span class="material-symbols-outlined text-[20px]">chat</span>
+                <span>Consultar por WhatsApp</span>
+              </a>
+            </div>
+
+            <!-- Trust Badges Bento Row -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full pt-4">
+              <div class="flex flex-col gap-1 p-3.5 rounded-xl bg-white shadow-sm border border-slate-100">
+                <div class="flex items-center gap-1.5 text-primary">
+                  <span class="material-symbols-outlined text-[20px] icon-fill">checkroom</span>
+                  <span class="text-[20px] font-bold">+500</span>
+                </div>
+                <span class="text-[12px] text-slate-500 font-medium">Modelos y Diseños</span>
+              </div>
+              <div class="flex flex-col gap-1 p-3.5 rounded-xl bg-white shadow-sm border border-slate-100">
+                <div class="flex items-center gap-1.5 text-secondary">
+                  <span class="material-symbols-outlined text-[20px] icon-fill">family_restroom</span>
+                  <span class="text-[20px] font-bold">Todas</span>
+                </div>
+                <span class="text-[12px] text-slate-500 font-medium">Tallas Niños &amp; Adultos</span>
+              </div>
+              <div class="flex flex-col gap-1 p-3.5 rounded-xl bg-white shadow-sm border border-slate-100">
+                <div class="flex items-center gap-1.5 text-tertiary">
+                  <span class="material-symbols-outlined text-[20px] icon-fill">local_activity</span>
+                  <span class="text-[20px] font-bold">Venta</span>
+                </div>
+                <span class="text-[12px] text-slate-500 font-medium">&amp; Renta de Vestuario</span>
+              </div>
+              <div class="flex flex-col gap-1 p-3.5 rounded-xl bg-white shadow-sm border border-slate-100">
+                <div class="flex items-center gap-1.5 text-primary">
+                  <span class="material-symbols-outlined text-[20px] icon-fill">support_agent</span>
+                  <span class="text-[20px] font-bold">Inmediata</span>
+                </div>
+                <span class="text-[12px] text-slate-500 font-medium">Asesoría en WhatsApp</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual Showcase -->
+          <div class="lg:col-span-5 relative flex justify-center mt-6 lg:mt-0">
+            <div class="relative w-full max-w-[440px]">
+              <!-- Decorative ambient glow discs -->
+              <div class="absolute -top-6 -left-6 w-36 h-36 rounded-full bg-secondary/20 blur-2xl pointer-events-none"></div>
+              <div class="absolute -bottom-8 -right-6 w-44 h-44 rounded-full bg-primary/25 blur-3xl pointer-events-none"></div>
+              <div class="absolute top-1/2 left-1/3 w-32 h-32 rounded-full bg-tertiary/20 blur-2xl pointer-events-none"></div>
+              
+              <div class="relative bg-white rounded-2xl p-2.5 shadow-2xl border border-slate-100 overflow-hidden">
+                <img 
+                  class="w-full h-[380px] sm:h-[420px] object-cover rounded-xl" 
+                  alt="Colección de disfraces en AMY Disfraces y Accesorios" 
+                  src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=900&auto=format&fit=crop&q=80"
+                />
+
+                <!-- Floating Pill Card on Hero -->
+                <div class="absolute bottom-5 left-5 right-5 bg-white/95 backdrop-blur-md p-3.5 rounded-xl shadow-lg flex items-center justify-between border border-slate-100">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary shrink-0">
+                      <span class="material-symbols-outlined text-[22px] icon-fill">theater_comedy</span>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-sm text-on-surface">Colección Actual</h4>
+                      <p class="text-xs text-slate-500">Vestuarios listos para entrega inmediata</p>
+                    </div>
+                  </div>
+                  <span class="inline-flex items-center gap-1 text-xs font-bold text-secondary bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-full">
+                    <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                    En Stock
+                  </span>
+                </div>
+              </div>
+
+              <!-- Accent badge in top right corner -->
+              <div class="absolute -top-3 -right-3 bg-tertiary text-white px-3.5 py-1.5 rounded-full shadow-lg text-xs font-bold flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[16px] icon-fill">verified</span>
+                <span>Calidad Premium Amy</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK BRAND STRIP WITH OFFICIAL LOGO -->
+    <section class="w-full bg-white py-5 shadow-sm border-y border-slate-100">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-8 flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+          <img 
+            alt="AMY Disfraces y Accesorios" 
+            class="h-12 w-auto object-contain rounded-lg p-0.5" 
+            src="assets/logo.jpg"
+          />
+          <div class="border-l border-slate-200 pl-4 hidden sm:block">
+            <p class="text-sm font-bold text-primary">AMY Disfraces y Accesorios</p>
+            <p class="text-xs text-slate-500">Confección detallada, telas suaves y cómodas, acabados de primera calidad.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-center gap-6 text-xs sm:text-sm font-semibold text-slate-600">
+          <span class="flex items-center gap-1 text-primary">
+            <span class="material-symbols-outlined text-[18px] icon-fill">verified_user</span> Renta y Venta Certificada
+          </span>
+          <span class="hidden md:flex items-center gap-1 text-secondary">
+            <span class="material-symbols-outlined text-[18px] icon-fill">local_shipping</span> Envíos y Apartados
+          </span>
+          <span class="flex items-center gap-1 text-tertiary">
+            <span class="material-symbols-outlined text-[18px] icon-fill">storefront</span> Probadores Climatizados
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECCIÓN PRINCIPAL: CATÁLOGO INTERACTIVO ==================== -->
+    <section class="w-full py-12 bg-surface" id="catalogo">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-8">
+        
+        <!-- Header del Catálogo -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-8">
+          <div>
+            <div class="flex items-center gap-1.5 text-primary mb-1">
+              <span class="material-symbols-outlined text-[20px] icon-fill">sell</span>
+              <span class="text-xs font-bold uppercase tracking-wider">Catálogo Completo de Productos</span>
+            </div>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-on-surface">Explora Fotos, Tallas y Precios</h2>
+            <p class="text-sm sm:text-base text-slate-600 max-w-2xl mt-1">
+              Selecciona una talla en cada tarjeta para ver su precio exacto y existencia. ¡Cotiza o aparta directo por WhatsApp con un solo clic!
+            </p>
+          </div>
+
+          <!-- Contador y Toggle de Stock -->
+          <div class="flex items-center gap-4 bg-white px-4 py-2 rounded-2xl border border-slate-200 shadow-sm self-start lg:self-auto">
+            <label class="flex items-center gap-2 cursor-pointer select-none text-xs font-bold text-slate-700">
+              <input type="checkbox" id="stock-toggle" class="w-4 h-4 text-primary rounded border-slate-300 focus:ring-primary">
+              <span>Solo disponibles</span>
+            </label>
+            <span class="text-slate-300">|</span>
+            <span id="product-count" class="text-xs font-bold text-primary">Cargando disfraces...</span>
+          </div>
+        </div>
+
+        <!-- Barra de Búsqueda y Filtros de Categoría -->
+        <div class="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-sm mb-8 space-y-4">
+          
+          <!-- Búsqueda y Filtro de Público -->
+          <div class="flex flex-col sm:flex-row items-center gap-3">
+            <div class="relative flex-1 w-full">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-[20px]">search</span>
+              <input 
+                type="text" 
+                id="catalog-search" 
+                placeholder="Buscar por personaje, disfraz o accesorio (ej. hada, cascanueces, catrina...)"
+                class="w-full bg-slate-50 hover:bg-slate-100/70 focus:bg-white text-sm text-slate-900 rounded-xl pl-11 pr-4 py-2.5 border border-slate-200 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
+              />
+            </div>
+
+            <!-- Filtro de público (Niños / Adultos / Todos) -->
+            <div class="flex items-center gap-1 bg-slate-100 p-1 rounded-xl self-stretch sm:self-auto shrink-0 justify-center">
+              <button type="button" data-audience-filter="all" class="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-primary text-white shadow-sm transition-all">Todos</button>
+              <button type="button" data-audience-filter="infantil" class="px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-600 hover:bg-slate-200 transition-all">Infantil</button>
+              <button type="button" data-audience-filter="adulto" class="px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-600 hover:bg-slate-200 transition-all">Adultos</button>
+            </div>
+          </div>
+
+          <!-- Pills de Categorías (Scroll horizontal en móvil) -->
+          <div class="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar pt-1" id="category-pills">
+            <button type="button" class="category-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-primary text-white shadow-sm transition-all" data-category="all">
+              🌟 Todos los Modelos
+            </button>
+            <button type="button" class="category-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm text-slate-600 bg-surface-container hover:bg-surface-container-high transition-all" data-category="fantasia">
+              👑 Fantasía &amp; Princesas
+            </button>
+            <button type="button" class="category-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm text-slate-600 bg-surface-container hover:bg-surface-container-high transition-all" data-category="superheroes">
+              ⚡ Superhéroes &amp; Cómics
+            </button>
+            <button type="button" class="category-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm text-slate-600 bg-surface-container hover:bg-surface-container-high transition-all" data-category="halloween">
+              🎃 Halloween &amp; Terror
+            </button>
+            <button type="button" class="category-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm text-slate-600 bg-surface-container hover:bg-surface-container-high transition-all" data-category="navidad">
+              🎄 Navidad &amp; Reyes
+            </button>
+            <button type="button" class="category-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm text-slate-600 bg-surface-container hover:bg-surface-container-high transition-all" data-category="escolar">
+              🐝 Festivales Escolares
+            </button>
+            <button type="button" class="category-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm text-slate-600 bg-surface-container hover:bg-surface-container-high transition-all" data-category="carnaval">
+              🎭 Carnaval &amp; Piratas
+            </button>
+            <button type="button" class="category-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm text-slate-600 bg-surface-container hover:bg-surface-container-high transition-all" data-category="accesorios">
+              ✨ Accesorios &amp; Pelucas
+            </button>
+          </div>
+        </div>
+
+        <!-- Grid de Tarjetas del Catálogo -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="catalog-grid">
+          <!-- Se llena dinámicamente con js/app.js -->
+        </div>
+
+        <!-- Banner de Medidas y Confección Especial -->
+        <div class="mt-10 bg-surface-container-low border border-slate-200/80 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+              <span class="material-symbols-outlined text-[26px]">straighten</span>
+            </div>
+            <div>
+              <h4 class="font-bold text-sm sm:text-base text-slate-900">¿Necesitas una medida especial o vestuarios para toda una comparsa?</h4>
+              <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
+                Confeccionamos pedidos grupales para escuelas, academias de baile y obras teatrales con precios de mayoreo.
+              </p>
+            </div>
+          </div>
+          <a 
+            class="shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary hover:bg-primary-container text-white font-semibold text-xs sm:text-sm transition-all shadow-sm"
+            href="https://wa.me/525512345678?text=Hola%20AMY%20Disfraces,%20busco%20cotizar%20un%20pedido%20grupal%20o%20medida%20especial"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Cotizar Medida Especial</span>
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECCIÓN: FESTIVIDADES DEL AÑO ==================== -->
+    <section class="w-full py-14 bg-surface-container-low border-t border-slate-200/60" id="festividades">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <div class="inline-flex items-center gap-1.5 bg-tertiary-fixed text-tertiary text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-2">
+            <span class="material-symbols-outlined text-[16px] icon-fill">celebration</span>
+            <span>Celebraciones Todo el Año</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-on-surface">Catálogo por Festividades del Año</h2>
+          <p class="text-sm sm:text-base text-on-surface-variant mt-2">
+            Cada fecha especial merece un atuendo memorable. Explora las colecciones principales preparadas con inventario garantizado.
+          </p>
+        </div>
+
+        <!-- Bento Grid de Festividades -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Festividad 1: Halloween -->
+          <div class="flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/70 group">
+            <div class="relative h-56 bg-slate-800 overflow-hidden cursor-pointer" onclick="window.amyApp.filterByCategory('halloween')">
+              <img 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                alt="Halloween y Día de Muertos" 
+                src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=600&auto=format&fit=crop&q=80"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+              <span class="absolute top-3 left-3 bg-tertiary text-white text-[11px] font-bold px-3 py-1 rounded-full flex items-center gap-1">
+                <span class="material-symbols-outlined text-[14px]">skull</span>
+                <span>Octubre - Noviembre</span>
+              </span>
+              <div class="absolute bottom-3 left-4 right-4 text-white">
+                <h3 class="text-[18px] font-bold leading-tight">Halloween &amp; Día de Muertos</h3>
+              </div>
+            </div>
+            <div class="p-5 flex flex-col flex-1 justify-between gap-4">
+              <p class="text-xs sm:text-sm text-slate-600">
+                Catrinas bordadas, brujas de gala, vampiros, calaveras, personajes de terror y maquillaje artístico profesional.
+              </p>
+              <button 
+                type="button"
+                onclick="window.amyApp.filterByCategory('halloween')"
+                class="w-full inline-flex items-center justify-center gap-2 bg-tertiary hover:bg-tertiary-container text-white font-semibold text-xs sm:text-sm py-2.5 rounded-full transition-colors"
+              >
+                <span>Ver disfraces de Halloween</span>
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Festividad 2: Navidad & Reyes -->
+          <div class="flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/70 group">
+            <div class="relative h-56 bg-slate-800 overflow-hidden cursor-pointer" onclick="window.amyApp.filterByCategory('navidad')">
+              <img 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                alt="Navidad y Pastorelas" 
+                src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=600&auto=format&fit=crop&q=80"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+              <span class="absolute top-3 left-3 bg-secondary text-white text-[11px] font-bold px-3 py-1 rounded-full flex items-center gap-1">
+                <span class="material-symbols-outlined text-[14px]">ac_unit</span>
+                <span>Diciembre - Enero</span>
+              </span>
+              <div class="absolute bottom-3 left-4 right-4 text-white">
+                <h3 class="text-[18px] font-bold leading-tight">Navidad, Reyes &amp; Pastorelas</h3>
+              </div>
+            </div>
+            <div class="p-5 flex flex-col flex-1 justify-between gap-4">
+              <p class="text-xs sm:text-sm text-slate-600">
+                Santa Claus de terciopelo imperial, duendecillos, Reyes Magos, angelitos, pastores y cascanueces de gala.
+              </p>
+              <button 
+                type="button"
+                onclick="window.amyApp.filterByCategory('navidad')"
+                class="w-full inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-container text-white font-semibold text-xs sm:text-sm py-2.5 rounded-full transition-colors"
+              >
+                <span>Ver disfraces Navideños</span>
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Festividad 3: Carnaval & Fiestas Patrias -->
+          <div class="flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/70 group">
+            <div class="relative h-56 bg-slate-800 overflow-hidden cursor-pointer" onclick="window.amyApp.filterByCategory('carnaval')">
+              <img 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                alt="Carnaval y Fiestas Patrias" 
+                src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600&auto=format&fit=crop&q=80"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+              <span class="absolute top-3 left-3 bg-primary text-white text-[11px] font-bold px-3 py-1 rounded-full flex items-center gap-1">
+                <span class="material-symbols-outlined text-[14px]">flare</span>
+                <span>Febrero &amp; Septiembre</span>
+              </span>
+              <div class="absolute bottom-3 left-4 right-4 text-white">
+                <h3 class="text-[18px] font-bold leading-tight">Carnaval &amp; Fiestas Patrias</h3>
+              </div>
+            </div>
+            <div class="p-5 flex flex-col flex-1 justify-between gap-4">
+              <p class="text-xs sm:text-sm text-slate-600">
+                Comparsas, piratas corsarios, antifaces venecianos, trajes típicos mexicanos, charros y vestuarios folclóricos.
+              </p>
+              <button 
+                type="button"
+                onclick="window.amyApp.filterByCategory('carnaval')"
+                class="w-full inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-container text-white font-semibold text-xs sm:text-sm py-2.5 rounded-full transition-colors"
+              >
+                <span>Ver disfraces de Carnaval</span>
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Festividad 4: Festivales Escolares & Primavera -->
+          <div class="flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/70 group">
+            <div class="relative h-56 bg-slate-800 overflow-hidden cursor-pointer" onclick="window.amyApp.filterByCategory('escolar')">
+              <img 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                alt="Festivales Escolares" 
+                src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=600&auto=format&fit=crop&q=80"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+              <span class="absolute top-3 left-3 bg-secondary-container text-on-secondary-container text-[11px] font-bold px-3 py-1 rounded-full flex items-center gap-1">
+                <span class="material-symbols-outlined text-[14px]">school</span>
+                <span>Marzo - Mayo</span>
+              </span>
+              <div class="absolute bottom-3 left-4 right-4 text-white">
+                <h3 class="text-[18px] font-bold leading-tight">Festivales Escolares &amp; Primavera</h3>
+              </div>
+            </div>
+            <div class="p-5 flex flex-col flex-1 justify-between gap-4">
+              <p class="text-xs sm:text-sm text-slate-600">
+                Abejitas, leoncitos, flores, mariposas, oficios y personajes para bailables y tablas gimnásticas infantiles.
+              </p>
+              <button 
+                type="button"
+                onclick="window.amyApp.filterByCategory('escolar')"
+                class="w-full inline-flex items-center justify-center gap-2 bg-secondary hover:bg-on-secondary-container text-white font-semibold text-xs sm:text-sm py-2.5 rounded-full transition-colors"
+              >
+                <span>Ver disfraces Escolares</span>
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== BANNER: ATENCIÓN INMEDIATA POR WHATSAPP ==================== -->
+    <section class="w-full py-12 bg-surface">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-8">
+        <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-secondary via-secondary to-primary p-8 sm:p-12 shadow-2xl text-white">
+          <!-- Decorative shapes -->
+          <div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+          <div class="absolute -left-10 -bottom-10 w-64 h-64 rounded-full bg-white/10 blur-2xl pointer-events-none"></div>
+
+          <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-7 flex flex-col items-start gap-3">
+              <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-300 animate-ping"></span>
+                <span>Asesores de AMY en línea</span>
+              </div>
+              <h2 class="text-2xl sm:text-4xl font-extrabold leading-tight">
+                ¿Buscas una talla especial o apartar tu fecha de evento?
+              </h2>
+              <p class="text-sm sm:text-base text-white/90 max-w-xl">
+                ¡Te atendemos de inmediato! Te enviamos fotos y medidas exactas del vestuario y reservamos tu atuendo en segundos por WhatsApp.
+              </p>
+              <div class="flex flex-wrap items-center gap-6 pt-2 text-xs sm:text-sm font-semibold">
+                <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">bolt</span> Respuesta promedio: &lt; 5 min</span>
+                <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">event_available</span> Apartado con 30%</span>
+              </div>
+            </div>
+
+            <!-- Botones de Acción de WhatsApp -->
+            <div class="lg:col-span-5 flex flex-col gap-3 w-full">
+              <a 
+                class="w-full inline-flex items-center justify-between bg-white text-secondary hover:bg-slate-50 font-bold text-sm px-6 py-3.5 rounded-full shadow-lg transition-transform hover:scale-[1.02] active:scale-[0.98]" 
+                href="https://wa.me/525512345678?text=Hola%20AMY%20Disfraces,%20deseo%20cotizar%20un%20disfraz%20inmediatamente" 
+                rel="noopener noreferrer" 
+                target="_blank"
+              >
+                <span class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[22px]">price_check</span>
+                  <span>Cotizar Inmediatamente</span>
+                </span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </a>
+
+              <a 
+                class="w-full inline-flex items-center justify-between bg-white/15 hover:bg-white/25 backdrop-blur-md text-white font-bold text-sm px-6 py-3.5 rounded-full transition-transform hover:scale-[1.02] active:scale-[0.98]" 
+                href="https://wa.me/525512345678?text=Hola%20AMY%20Disfraces,%20solicito%20el%20catálogo%20escolar%20completo" 
+                rel="noopener noreferrer" 
+                target="_blank"
+              >
+                <span class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-[22px]">menu_book</span>
+                  <span>Solicitar Catálogo Escolar</span>
+                </span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </a>
+
+              <a 
+                class="w-full inline-flex items-center justify-between bg-white/15 hover:bg-white/25 backdrop-blur-md text-white font-bold text-sm px-6 py-3.5 rounded-full transition-transform hover:scale-[1.02] active:scale-[0.98]" 
+                href="https://wa.me/525512345678?text=Hola%20AMY%20Disfraces,%20deseo%20apartar%20fecha%20para%20renta" 
+                rel="noopener noreferrer" 
+                target="_blank"
+              >
+                <span class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-[22px]">calendar_add_on</span>
+                  <span>Apartar Fecha de Renta</span>
+                </span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECCIÓN: UBICACIÓN DE TIENDA FÍSICA & HORARIOS ==================== -->
+    <section class="w-full py-12 bg-surface-container-low border-t border-slate-200/70" id="ubicacion-y-tienda">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-8">
+        
+        <div class="flex flex-col items-start gap-1 mb-8">
+          <div class="inline-flex items-center gap-1 text-primary text-xs font-bold uppercase tracking-wider">
+            <span class="material-symbols-outlined text-[18px] icon-fill">storefront</span>
+            <span>Punto de Venta &amp; Probadores</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-on-surface">Visítanos en nuestra tienda física</h2>
+          <p class="text-sm sm:text-base text-slate-600 max-w-2xl">
+            Ven a probarte el disfraz ideal. Contamos con amplia pared de pelucas, sombreros, máscaras y accesorios de utilería.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          
+          <!-- Bento de Información -->
+          <div class="lg:col-span-5 flex flex-col gap-5">
+            
+            <!-- Dirección -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 space-y-3">
+              <div class="flex items-center gap-3 text-primary">
+                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-[22px] icon-fill">location_on</span>
+                </div>
+                <h3 class="text-[18px] font-bold text-slate-900">Dirección y Referencias</h3>
+              </div>
+              <p class="text-sm font-bold text-slate-800">
+                Av. de las Fiestas 340, Local 12 (Plaza Creativa)
+              </p>
+              <p class="text-xs sm:text-sm text-slate-500">
+                A espaldas de la glorieta central, justo frente a la parada de transporte metropolitano y a 3 minutos del Teatro Principal.
+              </p>
+              <div class="pt-2 flex items-center gap-2 text-secondary text-xs font-semibold">
+                <span class="material-symbols-outlined text-[18px]">local_parking</span>
+                <span>Estacionamiento gratuito para clientes (Plaza Creativa)</span>
+              </div>
+            </div>
+
+            <!-- Horarios -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 space-y-4">
+              <div class="flex items-center gap-3 text-secondary">
+                <div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-[22px] icon-fill">schedule</span>
+                </div>
+                <h3 class="text-[18px] font-bold text-slate-900">Horarios de Atención</h3>
+              </div>
+
+              <div class="space-y-2 text-xs sm:text-sm">
+                <div class="flex justify-between items-center py-1.5 border-b border-slate-100">
+                  <span class="text-slate-500">Lunes a Viernes</span>
+                  <span class="font-bold text-slate-900">10:00 am – 8:00 pm</span>
+                </div>
+                <div class="flex justify-between items-center py-1.5 border-b border-slate-100">
+                  <span class="text-slate-500">Sábados</span>
+                  <span class="font-bold text-slate-900">10:00 am – 7:00 pm</span>
+                </div>
+                <div class="flex justify-between items-center py-1.5">
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-slate-500">Domingos</span>
+                    <span class="bg-tertiary-fixed text-tertiary text-[10px] px-2 py-0.5 rounded font-bold uppercase">Temporada Alta</span>
+                  </div>
+                  <span class="font-bold text-slate-900">11:00 am – 5:00 pm</span>
+                </div>
+              </div>
+
+              <div class="pt-2 flex flex-col sm:flex-row gap-2">
+                <a 
+                  class="flex-1 inline-flex items-center justify-center gap-1.5 bg-primary hover:bg-primary-container text-white text-xs sm:text-sm font-semibold py-2.5 rounded-full transition-colors" 
+                  href="https://maps.google.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <span class="material-symbols-outlined text-[18px]">navigation</span>
+                  <span>Cómo llegar con GPS</span>
+                </a>
+                <a 
+                  class="inline-flex items-center justify-center gap-1.5 bg-secondary hover:bg-on-secondary-container text-white text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-full transition-colors" 
+                  href="https://wa.me/525512345678?text=Hola%20AMY%20Disfraces,%20planeo%20visitar%20la%20tienda%20hoy" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <span class="material-symbols-outlined text-[18px]">chat</span>
+                  <span>Avisar llegada</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Mapa y Galería de Instalaciones -->
+          <div class="lg:col-span-7 flex flex-col gap-5">
+            
+            <!-- Mapa Visual de la Tienda -->
+            <div class="relative w-full rounded-2xl overflow-hidden shadow-sm bg-white p-2 border border-slate-200/80">
+              <div 
+                class="w-full h-72 sm:h-80 bg-cover bg-center rounded-xl relative overflow-hidden flex items-center justify-center" 
+                style="background-image: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1000&auto=format&fit=crop&q=80');"
+              >
+                <div class="absolute inset-0 bg-slate-900/40 backdrop-blur-[2px]"></div>
+
+                <!-- Badge Tienda Principal -->
+                <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-full shadow-md flex items-center gap-2">
+                  <img alt="AMY Logo" class="h-5 w-auto object-contain" src="assets/logo.jpg"/>
+                  <span class="text-xs font-bold text-primary">AMY Disfraces - Sucursal Principal</span>
+                </div>
+
+                <!-- Custom Map Marker -->
+                <div class="relative z-10 flex flex-col items-center">
+                  <div class="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center shadow-2xl ring-4 ring-white animate-bounce">
+                    <span class="material-symbols-outlined text-[28px] icon-fill">storefront</span>
+                  </div>
+                  <span class="bg-slate-900 text-white font-bold text-xs px-3 py-1 rounded-full shadow mt-2">
+                    ¡Te esperamos aquí!
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fotos de Instalaciones: Accesorios, Probadores y Exhibición -->
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80">
+              <div class="flex items-center justify-between mb-3">
+                <h4 class="font-bold text-sm sm:text-base text-slate-900">Conoce Nuestras Instalaciones</h4>
+                <span class="text-xs text-slate-500 font-medium">Probadores amplios y climatizados</span>
+              </div>
+
+              <div class="grid grid-cols-3 gap-3">
+                <div class="relative rounded-xl overflow-hidden h-28 group bg-slate-100">
+                  <img 
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" 
+                    alt="Pared de accesorios y máscaras" 
+                    src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=400&auto=format&fit=crop&q=80"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-2.5">
+                    <span class="text-white text-xs font-bold">Accesorios</span>
+                  </div>
+                </div>
+
+                <div class="relative rounded-xl overflow-hidden h-28 group bg-slate-100">
+                  <img 
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" 
+                    alt="Probadores y espejos" 
+                    src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=400&auto=format&fit=crop&q=80"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-2.5">
+                    <span class="text-white text-xs font-bold">Probadores</span>
+                  </div>
+                </div>
+
+                <div class="relative rounded-xl overflow-hidden h-28 group bg-slate-100">
+                  <img 
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" 
+                    alt="Racks de disfraces organizados" 
+                    src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=400&auto=format&fit=crop&q=80"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-2.5">
+                    <span class="text-white text-xs font-bold">Exhibición</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== MODAL DE VISTA RÁPIDA (QUICK VIEW) ==================== -->
+  <div id="product-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
+    <!-- Backdrop -->
+    <div id="modal-backdrop" class="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity"></div>
+
+    <!-- Modal Card -->
+    <div class="relative bg-white rounded-3xl max-w-3xl w-full max-h-[92vh] overflow-y-auto shadow-2xl border border-slate-100 z-10 flex flex-col md:flex-row overflow-hidden">
+      
+      <!-- Close button -->
+      <button 
+        id="modal-close-btn"
+        class="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-white/80 hover:bg-white text-slate-700 hover:text-slate-900 flex items-center justify-center shadow-md transition-all"
+        title="Cerrar ventana"
+      >
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+
+      <!-- Modal Image Column -->
+      <div class="w-full md:w-5/12 bg-slate-100 relative min-h-[260px] md:min-h-full">
+        <img id="modal-image" src="" alt="" class="w-full h-full object-cover"/>
+        <div class="absolute top-4 left-4">
+          <span id="modal-badge" class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-md bg-primary text-white">
+            Destacado
+          </span>
+        </div>
+      </div>
+
+      <!-- Modal Info Column -->
+      <div class="w-full md:w-7/12 p-6 sm:p-8 flex flex-col justify-between gap-6">
+        <div class="space-y-3">
+          <span id="modal-category" class="text-xs font-bold uppercase tracking-wider text-primary">
+            Categoría
+          </span>
+          <h3 id="modal-title" class="text-2xl font-extrabold text-slate-900 leading-tight">
+            Nombre del Disfraz
+          </h3>
+          <p id="modal-description" class="text-xs sm:text-sm text-slate-600">
+            Descripción detallada del atuendo.
+          </p>
+
+          <div class="p-3 bg-surface-container-low rounded-xl border border-slate-200/60">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-slate-500 block mb-1">
+              ✨ Incluye:
+            </span>
+            <p id="modal-includes" class="text-xs font-medium text-slate-700">
+              Accesorios y piezas incluidas.
+            </p>
+          </div>
+
+          <!-- Selector de Tallas en Modal -->
+          <div class="space-y-2 pt-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-700 block">
+              Selecciona tu Talla:
+            </span>
+            <div id="modal-variants" class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              <!-- Botones de tallas con precio -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer del Modal: Precios y CTA -->
+        <div class="pt-4 border-t border-slate-100 space-y-3">
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="text-xs text-slate-500 block">Precio según talla:</span>
+              <span id="modal-price" class="text-2xl font-extrabold text-primary font-headline-lg">
+                $0 MXN
+              </span>
+              <span id="modal-rent-price" class="text-xs text-secondary font-semibold block">
+                Opción de renta disponible
+              </span>
+            </div>
+            <div id="modal-stock-badge">
+              <!-- Badge de stock -->
+            </div>
+          </div>
+
+          <a 
+            id="modal-whatsapp-btn"
+            href="#" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="w-full inline-flex items-center justify-center gap-2 bg-secondary hover:bg-on-secondary-container text-white font-bold py-3.5 px-6 rounded-full shadow-md hover:shadow-lg transition-all active:scale-95 text-sm"
+          >
+            <span class="material-symbols-outlined text-[20px]">chat</span>
+            <span>Solicitar esta Talla por WhatsApp</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== BOTÓN FLOTANTE DE WHATSAPP ==================== -->
+  <aside class="fixed bottom-6 right-6 z-40">
+    <a 
+      class="w-[62px] h-[62px] rounded-full bg-secondary text-white flex items-center justify-center shadow-[0_16px_32px_-8px_rgba(0,109,57,0.38)] hover:bg-on-secondary-container transition-all hover:scale-110 active:scale-95 ring-4 ring-white/80" 
+      href="https://wa.me/525512345678?text=Hola%20AMY%20Disfraces,%20deseo%20atención%20inmediata" 
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Escríbenos por WhatsApp"
+    >
+      <span class="material-symbols-outlined text-[32px]">chat</span>
+    </a>
+  </aside>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="w-full bg-surface-container-low pt-12 pb-8 border-t border-slate-200">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-10">
+        
+        <!-- Columna 1: Marca -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <div class="bg-white p-1 rounded-xl border border-slate-200 shadow-sm">
+              <img alt="AMY Disfraces Logo" class="h-8 w-auto object-contain" src="assets/logo.jpg"/>
+            </div>
+            <span class="font-extrabold text-lg text-primary tracking-tight">AMY Disfraces</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-600">
+            Tu tienda de disfraces, accesorios de fantasía y atuendos temáticos para fiestas memorables, desfiles escolares y obras teatrales.
+          </p>
+          <div class="flex items-center gap-2 pt-1">
+            <a class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors border border-slate-200 shadow-sm" href="#" title="Facebook">
+              <span class="material-symbols-outlined text-[18px]">public</span>
+            </a>
+            <a class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors border border-slate-200 shadow-sm" href="#" title="Instagram">
+              <span class="material-symbols-outlined text-[18px]">photo_camera</span>
+            </a>
+            <a class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors border border-slate-200 shadow-sm" href="https://wa.me/525512345678" target="_blank" title="WhatsApp">
+              <span class="material-symbols-outlined text-[18px]">forum</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna 2: Categorías -->
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-slate-900 uppercase tracking-wider">Categorías</h4>
+          <ul class="space-y-1.5 text-xs sm:text-sm text-slate-600">
+            <li><a class="hover:text-primary transition-colors cursor-pointer" onclick="window.amyApp.filterByCategory('halloween')">Halloween &amp; Noche de Brujas</a></li>
+            <li><a class="hover:text-primary transition-colors cursor-pointer" onclick="window.amyApp.filterByCategory('navidad')">Navidad, Reyes &amp; Pastorelas</a></li>
+            <li><a class="hover:text-primary transition-colors cursor-pointer" onclick="window.amyApp.filterByCategory('carnaval')">Carnaval &amp; Primavera</a></li>
+            <li><a class="hover:text-primary transition-colors cursor-pointer" onclick="window.amyApp.filterByCategory('superheroes')">Superhéroes &amp; Villanos</a></li>
+            <li><a class="hover:text-primary transition-colors cursor-pointer" onclick="window.amyApp.filterByCategory('accesorios')">Pelucas, Máscaras y Accesorios</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Horarios & Sucursal -->
+        <div class="space-y-2">
+          <h4 class="font-bold text-sm text-slate-900 uppercase tracking-wider">Horarios &amp; Sucursal</h4>
+          <p class="text-xs sm:text-sm text-slate-600 flex items-start gap-2">
+            <span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">store</span>
+            <span>Av. de las Fiestas 340, Local 12 (Plaza Creativa)</span>
+          </p>
+          <p class="text-xs sm:text-sm text-slate-600 flex items-start gap-2">
+            <span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">schedule</span>
+            <span>Lunes a Sábado: 10:00 am - 8:00 pm<br/>Domingos: 11:00 am - 5:00 pm</span>
+          </p>
+          <p class="text-xs sm:text-sm text-slate-600 flex items-start gap-2">
+            <span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">call</span>
+            <span>WhatsApp: +52 55 1234 5678</span>
+          </p>
+        </div>
+
+        <!-- Columna 4: Atención Inmediata -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-sm text-slate-900 uppercase tracking-wider">Atención Inmediata</h4>
+          <p class="text-xs sm:text-sm text-slate-600">
+            ¿Tienes dudas sobre tallas, apartados o disponibilidad? Te respondemos de inmediato.
+          </p>
+          <a 
+            class="inline-flex items-center gap-2 bg-secondary text-white hover:bg-on-secondary-container transition-colors font-bold text-xs sm:text-sm px-5 py-2.5 rounded-full shadow-sm" 
+            href="https://wa.me/525512345678?text=Hola%20AMY%20Disfraces,%20deseo%20consultar%20tallas" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <span class="material-symbols-outlined text-[18px]">chat</span>
+            <span>WhatsApp Directo</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Barra inferior de copyright -->
+      <div class="pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+        <div>© 2024 AMY Disfraces y Accesorios. Todos los derechos reservados.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:underline hover:text-primary" href="#">Aviso de Privacidad</a>
+          <a class="hover:underline hover:text-primary" href="#">Políticas de Renta</a>
+          <a class="hover:underline hover:text-primary" href="#">Preguntas Frecuentes</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts: Datos del Catálogo y Lógica Interactiva -->
+  <script src="js/catalog-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
